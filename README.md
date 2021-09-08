@@ -1,5 +1,7 @@
 # My Gravatar
 
+[![Latest Stable Version](http://poser.pugx.org/bear8421/gravatar/v)](https://packagist.org/packages/bear8421/gravatar) [![Total Downloads](http://poser.pugx.org/bear8421/gravatar/downloads)](https://packagist.org/packages/bear8421/gravatar) [![Latest Unstable Version](http://poser.pugx.org/bear8421/gravatar/v/unstable)](https://packagist.org/packages/bear8421/gravatar) [![License](http://poser.pugx.org/bear8421/gravatar/license)](https://packagist.org/packages/bear8421/gravatar) [![PHP Version Require](http://poser.pugx.org/bear8421/gravatar/require/php)](https://packagist.org/packages/bear8421/gravatar)
+
 Cái thư viện nhỏ, bóc tách dữ liệu `Gravatar` cá nhân thông qua JSON API
 
 ## Cài đặt thư viện
