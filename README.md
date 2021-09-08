@@ -1,6 +1,6 @@
 # My Gravatar
 
-Cái thư viện nhỏ, bóc tách dữ liệu `Gravatar` cá nhân
+Cái thư viện nhỏ, bóc tách dữ liệu `Gravatar` cá nhân thông qua JSON API
 
 ## Cài đặt thư viện
 
