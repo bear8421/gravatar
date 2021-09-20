@@ -22,4 +22,4 @@ echo "Avatar Data: " . json_encode($gravatar->getData()) . PHP_EOL;
 echo "Avatar Properties: " . json_encode($gravatar->getProperties()) . PHP_EOL;
 
 
-echo gravatarUrlWithEmail() . PHP_EOL;
+echo "Get Gravatar with Email: " . gravatarUrlWithEmail() . PHP_EOL;
