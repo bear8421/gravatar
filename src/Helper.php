@@ -43,7 +43,10 @@ trait Helper
             CURLOPT_TIMEOUT        => $timeout,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_SSLVERSION     => CURL_SSLVERSION_TLSv1_2,
-            CURLOPT_CUSTOMREQUEST  => "POST",
+            CURLOPT_CUSTOMREQUEST  => "GET",
+            CURLOPT_HTTPHEADER     => array(
+                'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15'
+            ),
         ));
         $result = curl_exec($curl);
         curl_close($curl);

@@ -56,7 +56,8 @@ class Gravatar
         return [
             'username'    => $this->username,
             'cacheStatus' => $this->cacheStatus,
-            'cachePath'   => $this->cachePath
+            'cachePath'   => $this->cachePath,
+            'jsonLink'    => $this->jsonLink
         ];
     }
 
@@ -112,6 +113,32 @@ class Gravatar
     }
 
     /**
+     * Function getJsonLink
+     *
+     * @return string
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 09/20/2021 30:18
+     */
+    public function getJsonLink()
+    {
+        return $this->jsonLink;
+    }
+
+    /**
+     * Function getData
+     *
+     * @return object|null
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 09/20/2021 30:09
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
      * Function requestToGravatar
      *
      * @param string $url
@@ -124,7 +151,6 @@ class Gravatar
     protected function requestToGravatar($url = '')
     {
         $respond = $this->sendRequest($url);
-
         return json_decode($respond);
     }
 
@@ -151,7 +177,7 @@ class Gravatar
             }
             $this->data = $data;
         } catch (Exception $exception) {
-            $this->data = null;
+            $this->data = $exception;
         }
     }
 
