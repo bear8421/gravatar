@@ -194,7 +194,7 @@ class Gravatar
     public function showAvatar($size = '300')
     {
         if (!empty($this->data)) {
-            return $this->data->entry[0]->thumbnailUrl . '?' . http_build_query(['site' => $size]);
+            return $this->data->entry[0]->thumbnailUrl . '?' . http_build_query(['size' => $size]);
         }
 
         return null;
