@@ -53,12 +53,12 @@ class Gravatar
      */
     public function getProperties()
     {
-        return [
+        return array(
             'username'    => $this->username,
             'cacheStatus' => $this->cacheStatus,
             'cachePath'   => $this->cachePath,
             'jsonLink'    => $this->jsonLink
-        ];
+        );
     }
 
     /**
@@ -151,6 +151,7 @@ class Gravatar
     protected function requestToGravatar($url = '')
     {
         $respond = $this->sendRequest($url);
+
         return json_decode($respond);
     }
 

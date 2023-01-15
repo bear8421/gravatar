@@ -35,7 +35,7 @@ MIT License: https://nguyenanhung.mit-license.org/
 ## Liên hệ & Hỗ trợ
 
 | Name        | Email                | Skype            | Facebook      |
-| ----------- | -------------------- | ---------------- | ------------- |
+|-------------|----------------------|------------------|---------------|
 | Hung Nguyen | dev@nguyenanhung.com | nguyenanhung5891 | @nguyenanhung |
 
 From Vietnam with Love <3
