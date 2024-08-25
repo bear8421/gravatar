@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Project spreadsheets-basic
+ * Project gravatar
  * Created by PhpStorm
  * User: 713uk13m <dev@nguyenanhung.com>
  * Copyright: 713uk13m <dev@nguyenanhung.com>
@@ -12,9 +13,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Bear8421\Helper\Gravatar\Gravatar;
 
 $gravatar = new Gravatar();
-$gravatar->setUsername('nguyenanhung')->setCacheStatus(true)->setCachePath(__DIR__ . '/../tmp')->init();
+$gravatar->setUsername('nguyenanhung')
+    ->setCacheStatus(true)
+    ->setCachePath(__DIR__ . '/../tmp')->init();
 
 echo "Avatar URL: " . $gravatar->showAvatar(300) . PHP_EOL;
-echo "Avatar Data: " . json_encode($gravatar->getData()) . PHP_EOL;
+echo "Avatar Data: " . json_encode($gravatar->getData(), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . PHP_EOL;
 echo "Avatar Properties: " . json_encode($gravatar->getProperties()) . PHP_EOL;
 echo "Get Gravatar with Email: " . gravatarUrlWithEmail() . PHP_EOL;

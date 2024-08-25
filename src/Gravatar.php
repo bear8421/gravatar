@@ -26,7 +26,7 @@ class Gravatar
 
     const USER_PATTERN = '{{username}}';
 
-    const JSON_LINK = 'https://vi.gravatar.com/{{username}}.json';
+    const JSON_LINK = 'https://gravatar.com/{{username}}.json';
 
     /** @var string $username */
     protected $username = 'nguyenanhung';

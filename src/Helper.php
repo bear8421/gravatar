@@ -22,9 +22,9 @@ trait Helper
     /**
      * Function sendRequest
      *
-     * @param string $url
-     * @param array  $params
-     * @param int    $timeout
+     * @param  string  $url
+     * @param  array  $params
+     * @param  int  $timeout
      *
      * @return bool|string
      * @author   : 713uk13m <dev@nguyenanhung.com>
@@ -34,23 +34,22 @@ trait Helper
     protected function sendRequest($url = '', $params = array(), $timeout = 30)
     {
         $endpoint = $url . '?' . http_build_query($params);
-        $curl     = curl_init();
+        $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL            => $endpoint,
+            CURLOPT_URL => $endpoint,
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING       => "",
-            CURLOPT_MAXREDIRS      => 10,
-            CURLOPT_TIMEOUT        => $timeout,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => $timeout,
             CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_SSLVERSION     => CURL_SSLVERSION_TLSv1_2,
-            CURLOPT_CUSTOMREQUEST  => "GET",
-            CURLOPT_HTTPHEADER     => array(
+            CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
                 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15'
             ),
         ));
         $result = curl_exec($curl);
         curl_close($curl);
-
         return $result;
     }
 }
