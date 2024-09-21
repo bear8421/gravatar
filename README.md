@@ -2,7 +2,6 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/bear8421/gravatar.svg?style=flat-square)](https://packagist.org/packages/bear8421/gravatar)
 [![Total Downloads](https://img.shields.io/packagist/dt/bear8421/gravatar.svg?style=flat-square)](https://packagist.org/packages/bear8421/gravatar)
-[![Daily Downloads](https://img.shields.io/packagist/dd/bear8421/gravatar.svg?style=flat-square)](https://packagist.org/packages/bear8421/gravatar)
 [![Monthly Downloads](https://img.shields.io/packagist/dm/bear8421/gravatar.svg?style=flat-square)](https://packagist.org/packages/bear8421/gravatar)
 [![License](https://img.shields.io/packagist/l/bear8421/gravatar.svg?style=flat-square)](https://packagist.org/packages/bear8421/gravatar)
 [![PHP Version Require](https://img.shields.io/packagist/dependency-v/bear8421/gravatar/php)](https://packagist.org/packages/bear8421/gravatar)
