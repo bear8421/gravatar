@@ -22,9 +22,9 @@ trait Helper
     /**
      * Function sendRequest
      *
-     * @param  string  $url
-     * @param  array  $params
-     * @param  int  $timeout
+     * @param string $url
+     * @param array $params
+     * @param int $timeout
      *
      * @return bool|string
      * @author   : 713uk13m <dev@nguyenanhung.com>

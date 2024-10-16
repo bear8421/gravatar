@@ -54,10 +54,10 @@ class Gravatar
     public function getProperties()
     {
         return array(
-            'username'    => $this->username,
+            'username' => $this->username,
             'cacheStatus' => $this->cacheStatus,
-            'cachePath'   => $this->cachePath,
-            'jsonLink'    => $this->jsonLink
+            'cachePath' => $this->cachePath,
+            'jsonLink' => $this->jsonLink
         );
     }
 
@@ -74,7 +74,6 @@ class Gravatar
     public function setUsername($username)
     {
         $this->username = trim($username);
-
         return $this;
     }
 
@@ -91,7 +90,6 @@ class Gravatar
     public function setCacheStatus($cacheStatus = false)
     {
         $this->cacheStatus = $cacheStatus;
-
         return $this;
     }
 
@@ -108,7 +106,6 @@ class Gravatar
     public function setCachePath($cachePath = '')
     {
         $this->cachePath = $cachePath;
-
         return $this;
     }
 
@@ -151,7 +148,6 @@ class Gravatar
     protected function requestToGravatar($url = '')
     {
         $respond = $this->sendRequest($url);
-
         return json_decode($respond);
     }
 
@@ -197,7 +193,6 @@ class Gravatar
         if (!empty($this->data)) {
             return $this->data->entry[0]->thumbnailUrl . '?' . http_build_query(['size' => $size]);
         }
-
         return null;
     }
 }
