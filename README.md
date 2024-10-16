@@ -30,6 +30,8 @@ $gravatar->setCacheStatus(true)
 // Get Avatar
 $avatar = $gravatar->showAvatar(300);
 
+// Get Avatar from Email Address
+$avatarEmail = gravatarUrlWithEmail('dev@nguyenanhung.com');
 ```
 
 ## License
